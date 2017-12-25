@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:columnCount="3"
+    tools:context="com.demo.android.bmi.AllTool">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="openOptionsDialogNomessage"
+        android:text="DialogNoMess"
+        style="@style/AllTool"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="openOptionsDialog"
+        android:text="Dialog"
+        style="@style/AllTool"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="openOptionsDialogOK"
+        android:text="DialogOK"
+        style="@style/AllTool"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="openOptionsDialogListener"
+        android:text="DialogOKListener"
+        style="@style/AllTool"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="DialogListenerALL"
+        android:text="DialogListenerALL"
+        style="@style/AllTool"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="openDefineDialog"
+        android:text="DefineDialog"
+        style="@style/AllTool"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="openProcessDialog"
+        android:text="ProcessDialog"
+        style="@style/AllTool"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="openToast"
+        android:text="Toast"
+        style="@style/AllTool"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="openOptionMenu"
+        android:text="OptionMenu"
+        style="@style/AllTool"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="openContextMenu"
+        android:text="ContextMenu"
+        style="@style/AllTool"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="openAnimation"
+        android:text="Animation"
+        style="@style/AllTool"
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="小算盤"
+        android:onClick="openCaculator"
+        />
+
+    <Button
+        android:id="@+id/button_OX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="openGameOX"
+        android:text="OX遊戲" />
+    <Button
+        android:id="@+id/button_Gas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="openGasPoint"
+        android:text="GasPoint" />
+
+
+</GridLayout>
+

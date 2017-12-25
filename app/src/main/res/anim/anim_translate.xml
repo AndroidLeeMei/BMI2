@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <translate
+        android:fromXDelta="0"
+        android:toXDelta="100"
+        android:duration="1000"
+        android:repeatCount="infinite"
+        android:repeatMode="reverse"
+        android:interpolator="@android:anim/decelerate_interpolator"
+        ></translate>
+
+
+
+</set>
+
+    <!--android:interpolator="@android:anim/fade_in"  淡入,淡山…-->
+    <!--android:interpolator="@android:anim/decelerate_interpolator"  先加速加減-->

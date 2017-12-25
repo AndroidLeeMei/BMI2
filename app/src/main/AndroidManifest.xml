@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.demo.android.bmi">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/bmi"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Bmi">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Report" />
+        <activity android:name=".ReportBMI2" />
+        <activity
+            android:name=".Report_Game"
+            android:label="@string/title_activity_report__game"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".CalculatorActivity" />
+        <activity android:name=".AnimActivity" />
+        <activity android:name=".AlphaActivity" />
+        <activity android:name=".AllTool" />
+        <activity android:name=".DefineDialogActivity" />
+        <activity android:name=".OptionMenuActivity" />
+        <activity android:name=".ContextActivity" />
+        <activity android:name=".AnimationActivity" />
+        <activity
+            android:name=".GameOX"
+            android:label="@string/title_activity_game_ox"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".GasPointActivity" />
+        <activity android:name=".BMIReportActivity"></activity>
+    </application>
+
+</manifest>

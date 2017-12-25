@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.demo.android.bmi.AnimationActivity"
+    android:weightSum="1">
+
+<!--閃爍動畫效果…-->
+<LinearLayout
+    android:id="@+id/description"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#7000"
+    android:gravity="center"
+    android:onClick="onClickDescription"
+    android:orientation="horizontal"
+
+    tools:context="com.example.user.myapplication.TweenAlphaActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Tween Animation:alpha"
+        android:textColor="#010"
+        android:textSize="15sp" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <!--讓兩張圖重疊在一起,再用anim的toAlpha控制它,當上面圖片消失時,畫面上就看得到下面那張圖,不會變成空白-->
+        <ImageView
+            android:id="@+id/iv_bright"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            app:srcCompat="@drawable/tip_bright" />
+
+        <ImageView
+            android:id="@+id/iv_dark"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            app:srcCompat="@drawable/tip_dark" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="提示1"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tipText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="提示2"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tipText3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="提示3"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</LinearLayout>
+    <!--android:layout_marginBottom="100dp"-->
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/textTranslate"
+            android:layout_width="371dp"
+            android:layout_height="61dp"
+            android:layout_gravity="bottom"
+
+
+            android:textSize="20dp"
+
+            android:text="Tween Animation Translate"
+            android:layout_weight="0.04"
+            tools:layout_editor_absoluteX="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="219dp" />
+    </android.support.constraint.ConstraintLayout>
+
+
+</LinearLayout>
+
+    <!--android:gravity="center"-->

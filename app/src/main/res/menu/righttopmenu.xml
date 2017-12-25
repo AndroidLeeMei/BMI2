@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <!--只能支援一般設定才可使用,不支援陣列方式
+            <item android:title="@string/bmi_weight" />
+            -->
+        <item android:title="關於" android:id="@+id/item1"/>
+        <item android:title="結束" android:id="@+id/item2" />
+        <item android:title="項目3" android:id="@+id/item3" />
+        <item android:title="項目4" android:id="@+id/item4" />
+        <item android:title="項目5"  android:id="@+id/item5"/>
+        <item android:title="項目6" android:id="@+id/item6" />
+</menu>

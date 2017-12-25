@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--app:showAsAction="never" 只對optionaction有效 -->
+    <item
+        android:id="@+id/action_settings"
+        android:title="@string/action_meowth"
+        />
+    <item
+        android:id="@+id/item1"
+        android:title="@string/action_pikachu"
+        />
+    <item
+        android:id="@+id/item2"
+        android:title="@string/action_pokeball"
+        />
+    <item
+        android:id="@+id/item3"
+        android:title="@string/action_psyduck"
+        />
+    <item
+        android:id="@+id/item4"
+        android:title="@string/action_psyduck"
+        />
+
+
+
+    <item
+        android:id="@+id/action_browser"
+        android:title="@string/action_browser"
+        />
+    <item
+        android:id="@+id/action_map"
+        android:title="@string/action_map"
+        />
+    <item
+        android:id="@+id/action_dial"
+        android:title="@string/action_dial"
+        />
+    <item
+        android:id="@+id/action_call"
+        android:title="@string/action_call"
+        />
+    <item
+        android:id="@+id/action_uninstall"
+        android:title="@string/action_uninstall"
+        />
+
+    <item
+        android:id="@+id/action_install"
+        android:title="@string/action_install"
+        />
+
+
+    <item
+        android:id="@+id/action_play_music"
+        android:title="@string/action_play_music"
+        />
+    <item
+        android:id="@+id/action_2nd_activity"
+        android:title="@string/start_2nd_activity"
+        />
+
+
+
+    <item
+        android:id="@+id/item5"
+        android:title="子選單">
+        <menu>
+            <item android:title="SubItem1" android:id="@+id/submtem1"/>
+            <item android:title="SubItem2" android:id="@+id/submtem2"/>
+            <item android:title="SubItem3" android:id="@+id/submtem3"/>
+            <item android:title="SubItem4" android:id="@+id/submtem4"/>
+            <item android:title="SubItem5" android:id="@+id/submtem5"/>
+
+        </menu>
+    </item>
+</menu>

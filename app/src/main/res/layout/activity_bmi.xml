@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+>
+
+<!--
+    有提示文字
+            android:hint="請輸入身高"
+    文字顏色設定
+            android:textColor="#000"
+    消失,但有佔用空間
+        android:visibility="invisible"
+    消失,也不佔空間
+        android:visibility="gone"
+        預設看得見
+        android:visibility="visible"
+
+        以style換lpe置,若同時設定,則以android:的設定為優先
+        android:textSize="25sp"
+        android:textColor="#000"
+        style="@style/myStyle"
+        android:visibility= "invisible"
+
+        有互動效果,第一種方法,不需要監聽器的方法,"方法名稱()"
+        android:onClick="onClick"
+        再到Activity程式中定義方法
+        第二種方法讓Activity實作View.OnClickListener監聽器介面
+        並實作onCreate方法
+-->
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        style="@style/myStyle"
+        android:textColor="#000"
+        android:text="@string/bmi_height"
+
+        />
+
+    <EditText
+        android:id="@+id/height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+
+        android:inputType="textPersonName"
+        style="@style/myStyle"
+        android:hint="請輸入身高"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:textColor="#000"
+        style="@style/myStyle"
+        android:text="@string/bmi_weight" />
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+
+        android:inputType="textPersonName"
+        style="@style/myStyle"
+        android:hint="請輸入體重"
+
+        android:onClick="onClick"
+
+
+  />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:textColor="#000"
+        style="@style/myStyle"
+        android:text="@string/bmi_temp" />
+
+        <EditText
+            android:id="@+id/edit_temperature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            style="@style/myStyle"
+            android:hint="請輸入華氏溫度"
+            android:onClick="onClick"
+            />
+    <!--<EditText-->
+        <!--android:id="@+id/temp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:ems="10"-->
+
+        <!--android:inputType="textPersonName"-->
+        <!--style="@style/myStyle"-->
+        <!--android:hint="請輸入華氏溫度"-->
+        <!--android:onClick="onClick"-->
+        <!--/>-->
+        <ImageView
+            android:id="@+id/imageProperty"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:background="@drawable/animproperty"
+            />
+
+        <!--利用背景屬性來輪撥drawable animation-->
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:background="@drawable/anim2"
+            />
+
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:background="@drawable/anim3"
+            />
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+
+        style="@style/myStyle"
+        android:text="@string/bmi_btn"
+
+        />
+
+    <Button
+        android:id="@+id/buttonTemp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        style="@style/myStyle"
+        android:text="温度換算"
+        />
+
+    <!--<Button-->
+        <!--android:id="@+id/buttonBMI"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--style="@style/myStyle"-->
+        <!--android:text="All Tool"-->
+        <!--/>-->
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/myStyle"
+            android:onClick="openAllTool"
+            android:text="All Tool"
+            />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        style="@style/myStyle"
+        android:onClick="onClickAlpha"
+        android:text="閃爍動畫效果"
+        />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/myStyle"
+            android:onClick="onClickMoveTrans"
+            android:text="移動動畫效果"
+            />
+
+        <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--style="@style/myStyle"-->
+            <!--android:onClick="onClickDrawableAnim"-->
+            <!--android:text="Drawable Animation"-->
+            <!--/>-->
+
+    <!--<TextView-->
+    <!--android:textSize="20sp"-->
+        <!--android:id="@+id/result"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:ems="10"-->
+        <!--android:inputType="textPersonName"-->
+        <!--style="@style/myStyle"-->
+   <!--/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/suggest"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--style="@style/myStyle"-->
+        <!--android:inputType="textPersonName"-->
+
+
+        <!--/>-->
+
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:onClick="onClickDescription"
+        android:background="#7000"
+        >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <!--讓兩張圖重疊在一起,再用anim的toAlpha控制它-->
+            <ImageView
+                android:id="@+id/iv_bright"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+            app:srcCompat="@drawable/tip_bright" />
+                />
+
+            <!--android:background="@drawable/anim2"-->
+
+            <ImageView
+                android:id="@+id/iv_dark"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                app:srcCompat="@drawable/tip_dark" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="50sp"
+                android:textColor="#fff"
+                android:layout_margin="10dp"
+                android:text="提示1" />
+
+            <TextView
+                android:id="@+id/tipText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="50sp"
+                android:textColor="#fff"
+                android:layout_margin="10dp"
+                android:visibility="invisible"
+                android:text="提示2" />
+
+            <TextView
+                android:id="@+id/tipText3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="50sp"
+                android:textColor="#fff"
+                android:layout_margin="10dp"
+                android:visibility="invisible"
+                android:text="提示3" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
+    </ScrollView>
+    <!--android:background="#7000" 設定半透明狀態-->

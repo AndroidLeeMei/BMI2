@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:columnCount="4"
+    >
+    <!--
+        底下table 不要填滿整個layout,旁邊或下面有空白
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        底下table 填滿整個layout,若無法填滿時,會將最底下按按放
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+            設定每欄4個
+            android:columnCount="4"
+            更改按鈕大小
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            一個按鈕一次佔用兩個欄位
+            android:layout_columnSpan="2"
+            將按横向填滿欄位(横邊放大,到符合上一層為止)
+            android:layout_gravity="fill"
+            將按鈕佔用兩列的高度(縱邊放大)
+           android:layout_rowSpan="2"
+
+    -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="3"
+        android:text="                                           "
+
+        android:textSize="24sp"
+        android:visibility="visible" />
+
+    <Button
+        android:text="/"  android:id="@+id/division"
+        android:layout_column="3"
+        />
+    <Button android:text="1"         android:id="@+id/button1"/>
+    <Button android:text="2"         android:id="@+id/button2"/>
+    <Button android:text="3"         android:id="@+id/button3"/>
+    <Button android:text="x"         android:id="@+id/multi"/>
+    <Button android:text="4"         android:id="@+id/button4"/>
+    <Button android:text="5"         android:id="@+id/button5"/>
+    <Button android:text="6"         android:id="@+id/button6"/>
+    <Button android:text="-"         android:id="@+id/minus"/>
+    <Button android:text="7"         android:id="@+id/button7"/>
+    <Button android:text="8"         android:id="@+id/button8"/>
+    <Button android:text="9"        android:id="@+id/button9"/>
+    <Button android:text="+"   android:id="@+id/add"
+        android:layout_rowSpan="3"
+        android:layout_gravity="fill"
+        />
+    <Button android:text="."         android:id="@+id/button_dot"
+        android:layout_columnSpan="1"
+        android:layout_gravity="fill"
+        />
+    <Button android:text="0"         android:id="@+id/button0"
+        android:layout_columnSpan="1"
+        android:layout_gravity="fill"
+        />
+
+    <Button android:text="00" android:id="@+id/button00"/>
+    <Button android:text="C" android:id="@+id/button_clr"/>
+    <Button android:text="=" android:id="@+id/button_equal"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill"
+        />
+
+
+
+
+
+
+</GridLayout>

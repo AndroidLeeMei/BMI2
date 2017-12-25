@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="3"
+    tools:context="com.demo.android.bmi.GameOX">
+
+        <!--設定每列三行…-->
+        <!--android:columnCount="3"-->
+        <Button
+            android:id="@+id/buttonWithComputer"
+            style="@style/OXGameStyle"
+            android:textSize="15dp"
+            android:textColor="#000"
+            android:onClick="buttonWithComputer"
+            android:text="Computer" />
+
+        <Button
+            android:id="@+id/button11WithYourself"
+            style="@style/OXGameStyle"
+            android:textColor="#000"
+            android:onClick="buttonWithYourself"
+            android:textSize="15dp"
+            android:text="YourSelf" />
+
+        <Button
+            android:id="@+id/button_finish"
+            style="@style/OXGameStyle"
+            android:textSize="15dp"
+            android:textColor="#000"
+            android:text="Finish"
+            android:onClick="buttonFinish"/>
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/OXGameStyle"
+            android:text=""
+            android:onClick="buttonClick"/>
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/OXGameStyle"
+            android:onClick="buttonClick"
+            android:text="" />
+
+        <Button
+            android:id="@+id/button3"
+            style="@style/OXGameStyle"
+            android:onClick="buttonClick"
+            android:text="" />
+
+        <Button
+            android:id="@+id/button4"
+            android:onClick="buttonClick"
+            style="@style/OXGameStyle"
+            android:text="" />
+
+        <Button
+            android:id="@+id/button5"
+            android:onClick="buttonClick"
+            style="@style/OXGameStyle"
+            android:text="" />
+
+        <Button
+            android:id="@+id/button6"
+            android:onClick="buttonClick"
+            style="@style/OXGameStyle"
+            android:text="" />
+
+        <Button
+            android:id="@+id/button7"
+            android:onClick="buttonClick"
+            style="@style/OXGameStyle"
+            android:text="" />
+
+        <Button
+            android:id="@+id/button8"
+            android:onClick="buttonClick"
+            style="@style/OXGameStyle"
+            android:text="" />
+
+        <Button
+            android:id="@+id/button9"
+            android:onClick="buttonClick"
+            style="@style/OXGameStyle"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textResult"
+            style="@style/OXGameStyle"
+            android:layout_width="match_parent"
+            android:layout_columnSpan="3"
+            android:layout_columnWeight="1"
+
+            android:text=""
+            android:textAlignment="center" />
+
+    </GridLayout>
+
+
